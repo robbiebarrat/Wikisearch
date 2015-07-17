@@ -32,7 +32,7 @@ def breakinto(pagecontent, keyword):
 # Just scans the list of sentences created above for keywords #
 def findsentence(sentences, keyword):
     for i in sentences:
-        if keyword in i:
+        if str(keyword).lower() in i.lower():
             sentencecheck(i)
 
 # This function creates two lists, refinedlist and garbagelist. If the sentence it is processing does not meet certain
